@@ -4,6 +4,7 @@ Link dataset: https://github.com/ai-in-actiune/evaluari_scolare
 
 
 YOLOv5_score_detection_training - notebook pentru antrenare si descarcarea modelelor antrenate
+
     get_img_from_location   - (list of array) split detected object from row image
     get_object_localization - (str)object localization
     
