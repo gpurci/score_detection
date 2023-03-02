@@ -4,6 +4,10 @@ Link dataset: https://github.com/ai-in-actiune/evaluari_scolare
 
 
 YOLOv5_score_detection_training - notebook for network training
+
+     - run all cels in google colab,
+     - after runging all cells wil be dowloand 2 files: - best.pt   -> best trained weights, to localize score from image
+                                                        - model.zip -> best trained weights, to classify score from image
     
     
 
