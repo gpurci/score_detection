@@ -3,7 +3,7 @@
 Link dataset: https://github.com/ai-in-actiune/evaluari_scolare
 
 
-YOLOv5_score_detection_training - notebook pentru antrenare si descarcarea modelelor antrenate
+YOLOv5_score_detection_training - notebook for network training
     
     
 
@@ -11,16 +11,16 @@ YOLOv5_score_predict_gradio - API for score detection
     
     For prediction of score you need to:
         - upload best.pt
-        - model.zip
-        - run all cells           
-        - 
+        - run Init and Prediction cell 
 
-    get_img_from_location   - (list of array) split detected object from row image
-    get_object_localization - (str)object localization
+    getLstSplitImg  - return (list of array) split detected object from row image
+    getCoordsScore  - return (dict) with 6 keys: 'x0'- list of coordinates of point x0 from row image
+                                                 'y0'- list of coordinates of point y0 from row image
+                                                 'x1'- list of coordinates of point x1 from row image
+                                                 'y1'- list of coordinates of point y1 from row image
+                                                 'percent_cls'- list of percentage of localized score
+                                                 'isEmpty' - False if was found a score object
     
-    score_clasifier         - (str)predict detected object
-    predict_score           - (str)predict scores and sum of scores from row image, 
+    class Yolov5ScoreLocalization - class of optimized yolov5.detect model, 
 
-best.pt - model antrenat pentru detectarea obiectelor ce reprezinta punctajul pentru fiecare exercitiu
-
-model.zip - model antrenat pentru clasificarea punctajelor 
+best.pt - trained weights, for score localization
